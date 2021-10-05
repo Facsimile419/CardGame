@@ -1,13 +1,14 @@
 package Card;
 
 public class SetCard extends Card{
-    String shape;
-    int number;
-    String shading;
-    String color;
+    private String shape;
+    private int number;
+    private String shading;
+    private String color;
 
-    public SetCard(String shape, int number, String shading, String color, String cardText) {
-        super(cardText);
+    public SetCard(int number, String shape, String shading, String color) {
+        super(shading + "-" + color + " " + shape + " " + number);
+//        super(cardText);
         this.shape = shape;
         this.number =number;
         this.shading = shading;
@@ -15,23 +16,23 @@ public class SetCard extends Card{
     }
 
     public String getShape(){
-        return "";
+        return this.shape;
     }
 
     public int getNumber(){
-        return 0;
+        return this.number;
     }
 
     public String getShading(){
-        return "";
+        return this.shading;
     }
 
     public String getColor(){
-        return "";
+        return this.color;
     }
 
     @Override
     public String toString(){
-        return "";
+        return shading + "-" + color + " " + shape + " " + number;
     }
 }

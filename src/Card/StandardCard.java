@@ -5,21 +5,21 @@ public class StandardCard extends Card {
     String suit;
 
     public StandardCard(String cardText, String rank, String suit) {
-        super(cardText);
+        super(rank + " of " + suit);
         this.rank = rank;
         this.suit = suit;
     }
 
     public String getRank(){
-        return "";
+        return this.rank;
     }
 
     public String getSuit(){
-        return "";
+        return this.suit;
     }
 
     @Override
     public String toString(){
-        return "";
+        return rank + " of " + suit;
     }
 }

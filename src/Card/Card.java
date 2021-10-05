@@ -1,7 +1,7 @@
 package Card;
 
 public class Card {
-    String cardText;
+    private String cardText;
 
     public Card(String cardText){
         this.cardText = cardText;
@@ -13,6 +13,6 @@ public class Card {
 
     @Override
     public String toString(){
-        return "";
+        return this.cardText;
     }
 }

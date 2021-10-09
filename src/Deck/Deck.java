@@ -38,7 +38,7 @@ public class Deck {
                                     " cards in deck" + System.lineSeparator()
                                     + "********************");
         for (Card card : dealerPile) {
-            builtString.append(card);
+            builtString.append(System.lineSeparator() +card );
         }
         builtString.append(System.lineSeparator());
         builtString.append(discardPile.size() +
@@ -46,7 +46,7 @@ public class Deck {
                 + "********************");
 
         for (Card card : discardPile) {
-            builtString.append(card);
+            builtString.append(card + System.lineSeparator());
         }
 
         return builtString.toString();

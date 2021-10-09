@@ -3,7 +3,15 @@ package Deck;
 import Card.Card;
 import Card.StandardCard;
 
+/**
+ * this class represents a 52-card deck of playing cards
+ *
+ * @author Facsimile Nimely
+ */
 public class StandardDeck extends Deck {
+    /**
+     * Creates a standard 52-card deck with each combination of the rank and suit values
+     */
     public StandardDeck(){
         // create an array of ranks, array of suits
         // ranks 2,3
@@ -18,6 +26,10 @@ public class StandardDeck extends Deck {
         // standard 52-card deck can be created with loops using both arrays
     }
 
+    /**
+     * retrieves the card from the parent class using its dealTopCard() on the parent class
+     * @return StandardCard cast from a Card object
+     */
     @Override
     public StandardCard dealTopCard(){
         return (StandardCard) super.dealTopCard();

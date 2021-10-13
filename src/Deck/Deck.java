@@ -70,7 +70,7 @@ public class Deck {
         builtString.append(System.lineSeparator());
         builtString.append(discardPile.size() +
                 " cards in discard" + System.lineSeparator()
-                + "********************");
+                + "********************" + System.lineSeparator());
 
         for (Card card : discardPile) {
             builtString.append(card + System.lineSeparator());

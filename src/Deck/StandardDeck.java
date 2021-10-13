@@ -20,10 +20,9 @@ public class StandardDeck extends Deck {
 
         for (String rank : ranks) {
             for (String suit : suits) {
-                super.addCard(new Card(rank + " of " + suit));
+                super.addCard(new StandardCard(rank, suit));
             }
         }
-        // standard 52-card deck can be created with loops using both arrays
     }
 
     /**

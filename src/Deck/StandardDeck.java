@@ -14,7 +14,6 @@ public class StandardDeck extends Deck {
      */
     public StandardDeck(){
         // create an array of ranks, array of suits
-        // ranks 2,3
         String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
         String[] suits = {"Hearts", "Diamonds", "Spades", "Clubs"};
 

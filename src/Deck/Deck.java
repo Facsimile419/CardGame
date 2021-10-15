@@ -35,7 +35,8 @@ public class Deck {
      * moves all card from discardPile to dealerPile
      */
     public void shuffle(){
-        discardPile.addAll(dealerPile);
+        dealerPile.addAll(discardPile);
+        discardPile.removeAll(dealerPile);
         Collections.shuffle(dealerPile);
     }
 
@@ -68,7 +69,8 @@ public class Deck {
             builtString.append(System.lineSeparator() +card );
         }
         builtString.append(System.lineSeparator());
-        builtString.append(discardPile.size() +
+
+        builtString.append(System.lineSeparator() + discardPile.size() +
                 " cards in discard" + System.lineSeparator()
                 + "********************" + System.lineSeparator());
 
